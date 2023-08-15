@@ -2,10 +2,10 @@ const Hero = () => {
     return (
         <header className="relative">
             <div className="lg:h-[90vh] h-[87vh] w-full hover:shadow-xl duration-300 ease-in-out top-0">
-                <video id="background-video" autoPlay muted style={{}} className='lg:block laptop:block hidden ticky top-0 -z-10 h-screen w-screen object-cover' loop>
+                <video id="background-video" autoPlay muted style={{}} className='lg:block laptop:block hidden ticky top-0 -z-10 h-screen w-screen object-cover bg-black' loop>
                     <source src="/videos/desktop/two.mp4" type="video/mp4" />
                 </video>
-                <video id="background-video" autoPlay muted style={{}} className='block lg:hidden laptop:hidden fixed top-0 -z-10 h-screen w-screen object-right object-cover' loop>
+                <video id="background-video" autoPlay muted style={{}} className='block lg:hidden laptop:hidden fixed top-0 -z-10 h-screen w-screen object-right object-cover bg-black' loop>
                     <source src="/videos/mobile/two.mp4" type="video/mp4" />
                 </video>
                 <div className="flex flex-col h-full justify-center text-center mx-auto text-white ">

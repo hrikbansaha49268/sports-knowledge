@@ -4,7 +4,7 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 
 const HeroTxt = () => {
     return (
-        <section className="h-screen container mx-auto flex flex-col justify-center lg:px-0">
+        <section className="h-screen container mx-auto flex flex-col justify-center lg:px-0 lg:relative md:fixed">
             <div className="flex flex-col lg:items-start laptop:items-start items-center lg:justify-start laptop:justify-start justify-center lg:text-9xl laptop:text-8xl text-7xl text-white font-extrabold italic lg:text-opacity-100 laptop:text-opacity-100 text-opacity-50">
                 <p className="slideIn1">FUEL</p>
                 <p className="slideIn2">YOUR</p>
