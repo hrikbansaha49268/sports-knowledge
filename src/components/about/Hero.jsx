@@ -10,7 +10,7 @@ const Hero = () => {
                 </video>
                 <div className="flex flex-col h-full justify-center text-center mx-auto text-white ">
                     <div className="lg:absolute laptop:absolute laptop::z-10 lg:z-10 top-0 h-full flex flex-col justify-center">
-                        <p className="lg:text-9xl laptop:text-9xl mb-4 text-5xl font-black"><span className="font-light italic">OUR</span> <span className="italic">AIM</span></p>
+                        <p className="lg:text-9xl laptop:text-8xl mb-4 text-5xl font-black"><span className="font-light italic">OUR</span> <span className="italic">AIM</span></p>
                         <p className="lg:w-1/2 laptop:w-3/4 mx-auto tracking-wide lg:text-lg laptop:text-lg text-xs lg:px-0 px-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur voluptatem ut at? Id accusantium tempora, eveniet error minus consequuntur in officiis reiciendis voluptatum blanditiis impedit iure excepturi! Est, corporis?
                         </p>

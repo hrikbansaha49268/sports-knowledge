@@ -54,7 +54,7 @@ const AboutUs = () => {
             <section className="bg-white">
                 <MethodList />
                 <div className="lg:container mx-auto lg:px-0 px-3 lg:mt-32 laptop:mt-28">
-                    <p className="text-center w-full lg:text-9xl laptop:text-9xl text-5xl my-4 font-black italic text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-300">
+                    <p className="text-center w-full lg:text-9xl laptop:text-8xl text-5xl my-4 font-black italic text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-300">
                         OUR METHODS
                     </p>
                     <div className="relative group w-full">

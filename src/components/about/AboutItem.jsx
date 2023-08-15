@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutItem = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
+
     const textRef = useRef();
 
     useEffect(() => {
@@ -22,7 +23,7 @@ const AboutItem = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
                 scrollTrigger: {
                     scroller: ".box-box",
                     trigger: textRef.current,
-                    start: "top 60%",
+                    start: "top 100%",
                     end: "bottom 0%",
                     toggleActions: "play none restart reverse"
                 },
@@ -32,14 +33,14 @@ const AboutItem = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
 
     return (
         <div className={`laptop:h-[70vh] lg:h-[65vh] w-full laptop:my-0 lg:my-0 my-4 hover:shadow-xl duration-300 ease-in-out flex ${orientation} justify-between snap-center`}>
-            <div className="h-full laptop:w-1/2 lg:w-1/2">
-                <Image src={imgSrc} className="object-cover w-full laptop:h-full lg:h-full h-[40vh]" width={3000} height={2500} alt="" />
+            <div className="lg:h-full md:h-fit laptop:w-1/2 lg:w-1/2 md:w-1/2">
+                <Image src={imgSrc} className="object-cover w-full laptop:h-full lg:h-full md:h-full h-[40vh]" width={3000} height={2500} alt="" />
             </div>
             <div
-                className={`laptop:w-1/2 lg:w-1/2 ${txtColor} laptop:py-0 lg:py-0 py-4 laptop:px-6 lg:px-8 px-2 ${colorScheme}`}>
+                className={`laptop:w-1/2 lg:w-1/2 md:w-1/2 lg:h-full ${txtColor} laptop:py-0 lg:py-0 py-4 laptop:px-6 lg:px-8 px-2 ${colorScheme}`}>
                 <span ref={textRef} className="flex flex-col items-center justify-center h-full">
-                    <p className="laptop:text-7xl lg:text-7xl text-4xl font-black mb-4">{title}</p>
-                    <p className="text-center w-[90%] laptop:text-base lg:text-base text-xs">
+                    <p className="laptop:text-5xl lg:text-7xl text-4xl font-black mb-4">{title}</p>
+                    <p className="text-center w-[90%] laptop:text-base lg:text-base md:text-sm text-xs">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut. Nesciunt eveniet saepe neque. Dolor iure cumque dolorem assumenda amet ratitwo alias error iste illum, nobis modi quae omnis? Sapiente, doloremque qui. Placeat magni culpa aperiam itaque, asperiores, necessitatibus nihil a sunt non voluptatibus corrupti officiis eum dolorem harum distinctio.
                     </p>
                 </span>
