@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const AboutCom = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
+const AboutItem = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
     const textRef = useRef();
 
     useEffect(() => {
@@ -48,4 +48,4 @@ const AboutCom = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
     );
 };
 
-export default AboutCom;
+export default AboutItem;
