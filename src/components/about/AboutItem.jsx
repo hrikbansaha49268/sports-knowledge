@@ -21,19 +21,18 @@ const AboutItem = ({ colorScheme, imgSrc, orientation, title, txtColor }) => {
                 autoAlpha: 1,
                 duration: 0.5,
                 scrollTrigger: {
-                    scroller: ".box-box",
                     trigger: textRef.current,
                     start: "top 100%",
                     end: "bottom 0%",
                     toggleActions: "play none restart reverse"
                 },
             }
-        );
+        )
     });
 
     return (
         <div className={`laptop:h-[70vh] lg:h-[65vh] w-full laptop:my-0 lg:my-0 my-4 hover:shadow-xl duration-300 ease-in-out flex ${orientation} justify-between snap-center`}>
-            <div className="lg:h-full md:h-fit laptop:w-1/2 lg:w-1/2 md:w-1/2">
+            <div className="lg:h-full md:h-fit laptop:w-1/2 lg:w-1/2 md:w-1/2 bg-black">
                 <Image src={imgSrc} className="object-cover w-full laptop:h-full lg:h-full md:h-full h-[40vh]" width={3000} height={2500} alt="" />
             </div>
             <div
