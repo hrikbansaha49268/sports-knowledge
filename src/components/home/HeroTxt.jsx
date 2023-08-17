@@ -1,5 +1,4 @@
 "use client";
-// import '@/styles/globals.css';
 import Link from "next/link";
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import { useEffect, useRef } from "react";

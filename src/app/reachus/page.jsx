@@ -1,17 +1,14 @@
-import { Open_Sans } from "next/font/google";
-
 import QuerySubmit from "@/components/contact/QuerySubmit";
 import ContactDetails from "@/components/contact/ContactDetails";
 
-const open_sans = Open_Sans({
-    subsets: ["latin"],
-    style: ["normal", "italic"],
-    weight: "variable"
-});
+export const metadata = {
+    title: 'Sportsmanshipfull | Reach Us',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iste numquam ducimus vel accusamus sapiente laudantium aspernatur inventore omnis illo.Vitae.',
+};
 
 const ReachUs = () => {
     return (
-        <main className={open_sans.className}>
+        <main>
             <div className="lg:px-0 px-2">
                 <p className="lg:text-9xl text-5xl font-black text-center mt-32 uppercase">
                     <span className="font-medium">Reach</span> <span className="italic">Us</span>

@@ -1,20 +1,16 @@
 "use client";
-import "@/styles/globals.css";
 import { useRef, useState } from "react";
-import { Open_Sans } from "next/font/google";
-import MethodList from "@/components/about/MethodList";
 import Hero from "@/components/about/Hero";
 import ItemsList from "@/components/about/ItemsList";
+import MethodList from "@/components/about/MethodList";
 import CarouselButtons from "@/components/about/CarouselButtons";
 
+export const metadata = {
+    title: 'Sportsmanshipfull | About',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iste numquam ducimus vel accusamus sapiente laudantium aspernatur inventore omnis illo.Vitae.',
+};
 
-const open_sans = Open_Sans({
-    subsets: ["latin"],
-    style: ["normal", "italic"],
-    weight: "variable"
-});
-
-const AboutUs = () => {
+const About = () => {
 
     const strength = useRef();
     const athletic = useRef();
@@ -49,7 +45,7 @@ const AboutUs = () => {
     };
 
     return (
-        <main className={open_sans.className}>
+        <main>
             <Hero />
             <section className="bg-white">
                 <MethodList />
@@ -67,4 +63,4 @@ const AboutUs = () => {
     );
 }
 
-export default AboutUs;
+export default About;

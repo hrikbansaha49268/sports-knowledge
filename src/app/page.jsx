@@ -1,16 +1,14 @@
-import { Open_Sans } from "next/font/google";
 import BgVideo from "@/components/home/BgVideo";
 import HeroTxt from "@/components/home/HeroTxt";
 
-const open_sans = Open_Sans({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: "variable"
-});
+export const metadata = {
+  title: 'Sportsmanshipfull | Home',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iste numquam ducimus vel accusamus sapiente laudantium aspernatur inventore omnis illo.Vitae.',
+};
 
 export default function Home() {
   return (
-    <main className={open_sans.className}>
+    <main>
       <BgVideo />
       <HeroTxt />
     </main>
